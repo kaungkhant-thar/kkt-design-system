@@ -38,5 +38,8 @@
     "storybook": "^10.4.2",
     "typescript": "*",
     "vite": "^8.0.16"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

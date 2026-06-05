@@ -22,5 +22,8 @@
   "devDependencies": {
     "typescript": "*",
     "vitest": "^4.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

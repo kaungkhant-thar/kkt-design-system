@@ -20,5 +20,8 @@
   "devDependencies": {
     "style-dictionary": "^5.4.3",
     "typescript": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
