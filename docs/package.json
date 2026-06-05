@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "storybook build --output-dir storybook-static",
+    "chromatic": "chromatic --storybook-build-dir storybook-static",
     "lint": "tsc --noEmit --project tsconfig.json",
     "test": "echo \"No tests yet\"",
     "dev": "storybook dev --port 6006",
@@ -14,17 +15,18 @@
     "@kkt/tokens": "workspace:*"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^8.6.18",
-    "@storybook/addon-essentials": "^8.6.14",
-    "@storybook/react": "^8.6.18",
-    "@storybook/react-vite": "^8.6.18",
+    "@storybook/addon-a11y": "^10.4.2",
+    "@storybook/addon-docs": "^10.4.2",
+    "@storybook/react": "^10.4.2",
+    "@storybook/react-vite": "^10.4.2",
     "@types/react": "^18.3.30",
     "@types/react-dom": "^18.3.7",
     "@vanilla-extract/vite-plugin": "^5.2.2",
     "@vitejs/plugin-react": "^6.0.2",
+    "chromatic": "^17.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "storybook": "^8.6.18",
+    "storybook": "^10.4.2",
     "vite": "^8.0.16"
   }
 }

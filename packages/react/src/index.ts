@@ -14,3 +14,6 @@ export type { TypographyProps, TypographyVariant } from "./components/Typography
 
 export { Input } from "./components/Input/index.js";
 export type { InputProps } from "./components/Input/index.js";
+
+export { Modal } from "./components/Modal/index.js";
+export type { ModalProps } from "./components/Modal/index.js";
