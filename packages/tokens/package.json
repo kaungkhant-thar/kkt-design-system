@@ -3,20 +3,22 @@
   "version": "0.0.0",
   "private": false,
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/tokens.mjs",
+  "types": "./dist/tokens.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
+      "import": "./dist/tokens.mjs",
+      "types": "./dist/tokens.d.ts"
+    },
+    "./tokens.css": "./dist/tokens.css"
   },
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "lint": "tsc --noEmit",
+    "build": "node style-dictionary.config.mjs",
+    "lint": "tsc --noEmit --project tsconfig.json",
     "test": "echo \"No tests yet\""
   },
   "devDependencies": {
+    "style-dictionary": "^5.4.3",
     "typescript": "*"
   }
 }
