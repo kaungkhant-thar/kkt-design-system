@@ -2,3 +2,13 @@ node_modules
 dist
 .turbo
 *.tsbuildinfo
+
+# Storybook
+storybook-static
+
+# vanilla-extract build artifacts
+*.css.ts.vanilla.css
+*.css.ts.vanilla.js
+
+# macOS
+.DS_Store
