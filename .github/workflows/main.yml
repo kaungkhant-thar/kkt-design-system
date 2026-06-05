@@ -41,7 +41,7 @@ jobs:
 
       - name: Chromatic
         # Required secret: CHROMATIC_PROJECT_TOKEN
-        run: pnpm --filter @kkt771/docs chromatic
+        run: pnpm --filter @kkt771/docs chromatic -- --auto-accept-changes
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
