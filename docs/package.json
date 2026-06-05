@@ -1,0 +1,15 @@
+{
+  "name": "@kkt/docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo \"Storybook build (not configured yet)\"",
+    "lint": "echo \"No lint yet\"",
+    "test": "echo \"No tests yet\"",
+    "dev": "echo \"Storybook dev (not configured yet)\""
+  },
+  "dependencies": {
+    "@kkt/react": "workspace:*",
+    "@kkt/tokens": "workspace:*"
+  }
+}
