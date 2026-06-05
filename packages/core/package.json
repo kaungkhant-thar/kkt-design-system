@@ -14,12 +14,13 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "lint": "tsc --noEmit",
-    "test": "echo \"No tests yet\""
+    "test": "vitest run"
   },
   "dependencies": {
     "@kkt/tokens": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "^4.1.8"
   }
 }
