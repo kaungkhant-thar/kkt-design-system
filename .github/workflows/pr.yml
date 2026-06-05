@@ -36,6 +36,6 @@ jobs:
         run: pnpm build
 
       - name: Chromatic
-        run: pnpm --filter @kkt/docs chromatic
+        run: pnpm --filter @kkt771/docs chromatic
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
