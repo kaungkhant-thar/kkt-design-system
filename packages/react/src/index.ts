@@ -17,3 +17,6 @@ export type { InputProps } from "./components/Input/index.js";
 
 export { Modal } from "./components/Modal/index.js";
 export type { ModalProps } from "./components/Modal/index.js";
+
+export { Select } from "./components/Select/index.js";
+export type { SelectProps, SelectOption } from "./components/Select/index.js";
