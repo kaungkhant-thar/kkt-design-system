@@ -86,7 +86,7 @@ export const AriaAttributes: Story = {
     await expect(dialog).toHaveAttribute("aria-labelledby");
 
     const labelId = dialog.getAttribute("aria-labelledby")!;
-    const titleEl = canvasElement.querySelector(`#${labelId}`);
+    const titleEl = canvasElement.ownerDocument.getElementById(labelId);
     await expect(titleEl?.textContent).toBe("Aria Test");
   },
 };
@@ -138,14 +138,17 @@ export const FocusTrap: Story = {
     const dialog = await canvas.findByRole("dialog");
     const withinDialog = within(dialog);
 
-    // Tab through: dialog (initial) → close btn → Cancel → Confirm → wraps to close btn
+    // Dialog receives focus on open; Tab cycles: Close → Cancel → Confirm → wraps to Close
+    await userEvent.tab();
+    await expect(withinDialog.getByRole("button", { name: "Close" })).toHaveFocus();
+
     await userEvent.tab();
     await expect(withinDialog.getByRole("button", { name: "Cancel" })).toHaveFocus();
 
     await userEvent.tab();
     await expect(withinDialog.getByRole("button", { name: "Confirm" })).toHaveFocus();
 
-    // Wrap forward — should go to Close button
+    // Wrap forward — should cycle back to Close
     await userEvent.tab();
     await expect(withinDialog.getByRole("button", { name: "Close" })).toHaveFocus();
 
