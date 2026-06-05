@@ -1,5 +1,11 @@
 # @kkt/react
 
+## 0.3.0
+
+### Minor Changes
+
+- f07abd1: testing
+
 ## 0.2.0
 
 ### Minor Changes
