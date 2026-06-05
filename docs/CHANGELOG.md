@@ -1,5 +1,12 @@
 # @kkt/docs
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [f07abd1]
+  - @kkt771/react@0.3.0
+
 ## 0.1.1
 
 ### Patch Changes
