@@ -36,8 +36,7 @@ export const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
     useEffect(() => {
       if (open) {
         triggerRef.current = document.activeElement;
-        // Focus the dialog on next tick so it's in the DOM
-        requestAnimationFrame(() => dialogRef.current?.focus());
+        dialogRef.current?.focus();
         document.body.style.overflow = "hidden";
       } else {
         document.body.style.overflow = "";
@@ -69,12 +68,12 @@ export const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
         const last = focusable[focusable.length - 1];
 
         if (e.shiftKey) {
-          if (document.activeElement === first) {
+          if (document.activeElement === first || document.activeElement === dialogRef.current) {
             e.preventDefault();
             last.focus();
           }
         } else {
-          if (document.activeElement === last) {
+          if (document.activeElement === last || document.activeElement === dialogRef.current) {
             e.preventDefault();
             first.focus();
           }
