@@ -1,4 +1,4 @@
-import "@kkt/tokens/tokens.css";
+import "@kkt771/tokens/tokens.css";
 import type { Preview } from "@storybook/react-vite";
 
 const preview: Preview = {

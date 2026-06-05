@@ -1,5 +1,5 @@
 import React from "react";
-import { cx } from "@kkt/core";
+import { cx } from "@kkt771/core";
 import * as styles from "./Badge.css.js";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {

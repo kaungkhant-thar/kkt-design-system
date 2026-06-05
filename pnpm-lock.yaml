@@ -20,10 +20,10 @@ importers:
 
   docs:
     dependencies:
-      '@kkt/react':
+      '@kkt771/react':
         specifier: workspace:*
         version: link:../packages/react
-      '@kkt/tokens':
+      '@kkt771/tokens':
         specifier: workspace:*
         version: link:../packages/tokens
     devDependencies:
@@ -69,7 +69,7 @@ importers:
 
   packages/core:
     dependencies:
-      '@kkt/tokens':
+      '@kkt771/tokens':
         specifier: workspace:*
         version: link:../tokens
     devDependencies:
@@ -82,10 +82,10 @@ importers:
 
   packages/react:
     dependencies:
-      '@kkt/core':
+      '@kkt771/core':
         specifier: workspace:*
         version: link:../core
-      '@kkt/tokens':
+      '@kkt771/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@vanilla-extract/css':

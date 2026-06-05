@@ -1,5 +1,5 @@
 import React from "react";
-import { cx } from "@kkt/core";
+import { cx } from "@kkt771/core";
 import * as styles from "./Typography.css.js";
 
 export type TypographyVariant = "display" | "heading" | "body" | "caption" | "label";

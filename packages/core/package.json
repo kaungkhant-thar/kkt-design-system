@@ -1,5 +1,5 @@
 {
-  "name": "@kkt/core",
+  "name": "@kkt771/core",
   "version": "0.0.0",
   "private": false,
   "type": "module",
@@ -17,7 +17,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@kkt/tokens": "workspace:*"
+    "@kkt771/tokens": "workspace:*"
   },
   "devDependencies": {
     "typescript": "*",

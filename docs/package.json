@@ -1,5 +1,5 @@
 {
-  "name": "@kkt/docs",
+  "name": "@kkt771/docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
     "storybook": "storybook dev --port 6006"
   },
   "dependencies": {
-    "@kkt/react": "workspace:*",
-    "@kkt/tokens": "workspace:*"
+    "@kkt771/react": "workspace:*",
+    "@kkt771/tokens": "workspace:*"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^10.4.2",

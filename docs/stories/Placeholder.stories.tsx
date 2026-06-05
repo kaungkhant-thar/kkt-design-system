@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { VERSION } from "@kkt/react";
+import { VERSION } from "@kkt771/react";
 
 function Placeholder(): React.JSX.Element {
   return (
@@ -33,7 +33,7 @@ function Placeholder(): React.JSX.Element {
       >
         Storybook is set up. Token CSS custom properties are loaded globally.
         <br />
-        <code>@kkt/react</code> version: <strong>{VERSION}</strong>
+        <code>@kkt771/react</code> version: <strong>{VERSION}</strong>
       </p>
     </div>
   );

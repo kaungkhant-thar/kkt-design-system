@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback, useId } from "react";
-import { cx } from "@kkt/core";
+import { cx } from "@kkt771/core";
 import * as styles from "./Modal.css.js";
 
 export interface ModalProps {

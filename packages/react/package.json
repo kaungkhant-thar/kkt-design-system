@@ -1,5 +1,5 @@
 {
-  "name": "@kkt/react",
+  "name": "@kkt771/react",
   "version": "0.1.0",
   "private": false,
   "type": "module",
@@ -18,8 +18,8 @@
     "test": "echo \"No tests yet\""
   },
   "dependencies": {
-    "@kkt/core": "workspace:*",
-    "@kkt/tokens": "workspace:*",
+    "@kkt771/core": "workspace:*",
+    "@kkt771/tokens": "workspace:*",
     "@vanilla-extract/css": "^1.20.1"
   },
   "peerDependencies": {
