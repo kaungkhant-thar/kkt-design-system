@@ -20,3 +20,15 @@ export type { ModalProps } from "./components/Modal/index.js";
 
 export { Select } from "./components/Select/index.js";
 export type { SelectProps, SelectOption } from "./components/Select/index.js";
+
+export { Spinner } from "./components/Spinner/index.js";
+export type { SpinnerProps } from "./components/Spinner/index.js";
+
+export { Alert } from "./components/Alert/index.js";
+export type { AlertProps } from "./components/Alert/index.js";
+
+export { FileInput } from "./components/FileInput/index.js";
+export type { FileInputProps } from "./components/FileInput/index.js";
+
+export { CodeBlock } from "./components/CodeBlock/index.js";
+export type { CodeBlockProps } from "./components/CodeBlock/index.js";
